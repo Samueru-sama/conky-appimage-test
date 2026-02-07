@@ -10,6 +10,7 @@ export ADD_HOOKS="self-updater.bg.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=/usr/share/icons/hicolor/scalable/apps/conky-logomark-violet.svg
 export DESKTOP=/usr/share/applications/conky.desktop
+export ANYLINUX_LIB=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/conky /usr/lib/conky
