@@ -13,6 +13,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
+make-aur-package libaudclient
 export PRE_BUILD_CMDS="
 	sed -i -e 's|-D BUILD_DOCS=ON|-D BUILD_DOCS=ON -DBUILD_AUDACIOUS=ON|' ./PKGBUILD
 "
